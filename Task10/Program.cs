@@ -10,6 +10,9 @@ namespace Task10
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(
+                "Даны натуральное число n, действительные числа a1, …, аn. Если последовательность а1, …, an упорядочена по не " +
+                "убыванию (т. е. Если а1 < = a2 <= … <= an), то оставить ее без изменения. Иначе получить последовательность аn, …, a1.");
             while (true)
             {
                 try
@@ -19,7 +22,7 @@ namespace Task10
 
                     bool isNormal = true;
                     ReversedList list = new ReversedList(Input.readInt("Введите число"));
-                    for (int i = 0; i < count; i++)
+                    for (int i = 0; i < count - 1; i++)
                     {
                         int next = Input.readInt("Введите число");
                         isNormal = next >= list.data;

@@ -24,8 +24,8 @@ namespace Task10
 
         public override string ToString()
         {
-            if (prev == null) return "null";
-            return data + "->" + prev.ToString();
+            if (prev == null) return data.ToString();
+            return data + "->" + prev;
         }
     }
 }
